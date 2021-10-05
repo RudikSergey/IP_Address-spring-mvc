@@ -1,0 +1,12 @@
+CREATE TABLE [IpAddress] (
+	id int IDENTITY(1,1) PRIMARY KEY,
+	ip_address nvarchar(15) NOT NULL,
+	device nvarchar(100),
+	description nvarchar(1024),
+	comments nvarchar(1024)
+)
+GO
+
+
+insert into IpAddress([ip_address],[device],[description],[comments])
+values ('10.130.4.0','-','-','-')
